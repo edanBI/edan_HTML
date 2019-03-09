@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title> Edan Ben Ivri </title>
+</head>
+
+<body>
+  <div id="menu">
+    <a href="#about"> <b>About Me </b> </a> |
+    <a href="#photos"> <b> My Photos </b> </a> |
+    <a href="#playlist"> <b> My Playlist </b> </a> |
+    <a href="#like"> <b> Like </b> </a> |
+    <a href="#qrcoder"> <b> QR code </b> </a> |
+    <a href="#spa"> <b> Q&A </b> </a> |
+    <a href="#contact"> <b> Contact Me </b> </a>
+  </div>
+
+  <header id="edan_bi">
+      <h1>Edan Ben Ivri</h1>
+  </header>
+
+  <section id="about" class="section">
+    <p id="general_info">
+      <b> Who am I? </b> <br>
+      Hey there! Edan Ben Ivri. I'm a 4th year Information Systems Engineering Student at Ben Gurion University.
+      Originally i'm from Or Yehuda, Israel, born and bred. In the past 5 years i've been living in Be'er Sheva.
+      My hobbies include watching TV (as most people), ride my bicycles, playing video games and hangout with friends.
+      I'm have a strong interest in IT and technology, that is the main reason I chose this field of study.<br>
+      Hope you'll like my sweet page :)
+    </p>
+  </section>
+
+  <br />
+
+  <section id="photos" class="section">
+    my photos
+  </section>
+
+  <br />
+
+  <section id="playlist" class="section">
+    <h3> playlist </h3> 
+    <br>
+    <iframe src="https://open.spotify.com/embed/track/1oTHteQbmJw15rPxPVXUTv" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/track/2LPUvD5DDOO4UYGkWgjI2C" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/track/2RZns0MGaKKLVxIZVMcJb4" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/track/6gOm4w7mbeIsouBWpRc9Qj" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  </section>
+
+  <br />
+
+  <section id="like" class="section">
+    give me a like <br>
+  </section>
+
+  <br>
+
+  <section id="qrcoder" class="section">
+    scan my code
+  </section>
+
+  <br />
+
+  <section id="QA" class="section">
+    Q&A
+    <br />
+    <br />
+    <br />
+  </section>
+
+  <br />
+
+  <footer id="contact">
+    <h3> Contact Me </h3>
+    <ul class="icons_contact">
+      <li>Gmail | </li>
+      <li>Facebook | </li>
+      <li>Instagram | </li>
+      <li>LinkedIn | </li>
+      <li>Github</li>
+    </ul>
+  </footer>
+    
+
+  <script type="text/javascript">
+    $(function () {
+      $("#nav a").click(function (e) {
+        e.preventDefault();
+        $('html,body').scrollTo(this.hash, this.hash);
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).scroll(function () {
+      $('#menu').toggle($(this).scrollTop() > 1000)
+    });​
+  </script>
+</body>
+
+</html>

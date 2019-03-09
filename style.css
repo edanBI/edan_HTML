@@ -1,0 +1,68 @@
+body {
+	margin: 0;
+	font-size: 100%;
+}
+
+section, #contact {
+	margin-left: 20px;
+	margin-right: 20px;
+	border: thin solid blue;
+}
+
+/* the top menu */
+#menu {
+	margin-left: 20px;
+	margin-right: 20px;
+	top: 0px;
+	width: 96.8%;
+	height: 45px;
+	position: fixed;
+	text-align: center;
+	background: darkgray;
+	vertical-align: bottom;
+}
+
+#edan_bi {
+	/* margin-left: 50px;
+	margin-right: 50px; */
+	margin-bottom: 25px;
+	height: 300px;
+	text-align: center;
+	font: normal small-caps 40px Georgia;
+	color: whitesmoke;
+	background-image: url("misc//banner.jpg");
+	background-position: 20%;
+}
+ header h1 {
+	 position: relative;		
+	 top: 40%;
+	 cursor: default;
+ }
+ 
+ #playlist h3 {
+	 margin: 5px;
+	 text-align: center;
+ }
+
+ footer {
+	 margin-bottom: 70px;
+	 height: 80px;
+	 text-align: center;
+}
+
+ #icons_contact {
+	list-style: none;
+}
+
+ul.icons_contact li {
+	display: inline;
+}
+
+ #contact {
+	 background-color: cadetblue;
+ }
+
+ #contact h3 {
+	 margin: 5px;
+ }
+
