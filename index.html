@@ -2,8 +2,9 @@
 <html>
 
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css" />
   <title> Edan Ben Ivri </title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Ewert" rel="stylesheet">
 </head>
 
 <body>
@@ -13,20 +14,20 @@
     <a href="#playlist"> <b> My Playlist </b> </a> |
     <a href="#like"> <b> Like </b> </a> |
     <a href="#qrcoder"> <b> QR code </b> </a> |
-    <a href="#spa"> <b> Q&A </b> </a> |
+    <a href="#QnA"> <b> Q&A </b> </a> |
     <a href="#contact"> <b> Contact Me </b> </a>
   </div>
 
-  <header id="edan_bi">
-      <h1>Edan Ben Ivri</h1>
-  </header>
+  <div id="edan_bi">
+      <p>Edan Ben Ivri</p>
+  </div>
 
   <section id="about" class="section">
-    <p id="general_info">
-      <b> Who am I? </b> <br>
+    <h3> Who am I? </h3>
+    <p id="about_me">
       Hey there! Edan Ben Ivri. I'm a 4th year Information Systems Engineering Student at Ben Gurion University.
       Originally i'm from Or Yehuda, Israel, born and bred. In the past 5 years i've been living in Be'er Sheva.
-      My hobbies include watching TV (as most people), ride my bicycles, playing video games and hangout with friends.
+      My hobbies include listening to music, collecting vinyl records, watching TV (as most people), snowboarding, cycling, playing video games and hangout with friends.
       I'm have a strong interest in IT and technology, that is the main reason I chose this field of study.<br>
       Hope you'll like my sweet page :)
     </p>
@@ -35,14 +36,16 @@
   <br />
 
   <section id="photos" class="section">
-    my photos
+    <h3> my photos </h3> <br>
+    <img src="misc/pic1.jpg" width="300" height="200">
+    <img src="misc/pic2.jpg" width="300" height="200">
+    <img src="misc/pic3.jpg" width="300" height="200">
   </section>
 
   <br />
 
   <section id="playlist" class="section">
-    <h3> playlist </h3> 
-    <br>
+    <h3> playlist </h3> <br>
     <iframe src="https://open.spotify.com/embed/track/1oTHteQbmJw15rPxPVXUTv" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     <iframe src="https://open.spotify.com/embed/track/2LPUvD5DDOO4UYGkWgjI2C" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     <iframe src="https://open.spotify.com/embed/track/2RZns0MGaKKLVxIZVMcJb4" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
@@ -52,12 +55,14 @@
   <br />
 
   <section id="like_qr" class="section">
-    <div id="like">
+    <!-- like button -->
+    <div id="like_btn" class="trend">
       give me a like <br>
-      <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fgithub.com%2FedanBI%2Fedan_HTML&width=450&layout=standard&action=like&size=large&show_faces=false&share=true&height=35&appId" 
-      width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+      <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fedanbi.github.io%2Fedan_HTML%2F&width=132&layout=button_count&action=like&size=large&show_faces=false&share=true&height=46&appId" 
+      width="132" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
     </div>
-    <div id="qrcoder">
+    <!-- QR code -->
+    <div id="qr_code" class="trend">
         scan my code <br>
         <img src="misc/QRcode.png">
     </div>
@@ -65,7 +70,7 @@
 
   <br />
 
-  <section id="QA" class="section">
+  <section id="QnA" class="section">
     Q&A
     <br />
     <br />
@@ -85,7 +90,7 @@
     </ul>
   </footer>
     
-
+  
   <script type="text/javascript">
     $(function () {
       $("#nav a").click(function (e) {

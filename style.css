@@ -9,6 +9,12 @@ section, #contact {
 	border: thin solid blue;
 }
 
+#about_me {
+	margin-left: 10px;
+	margin-right: 5px;
+	line-height: 20px;
+	font-size: 110%;
+}
 /* the top menu */
 #menu {
 	margin-left: 20px;
@@ -25,44 +31,57 @@ section, #contact {
 #edan_bi {
 	/* margin-left: 50px;
 	margin-right: 50px; */
-	margin-bottom: 25px;
+	margin: 30px 0 25px 0;
 	height: 300px;
 	text-align: center;
-	font: normal small-caps 40px Georgia;
-	color: whitesmoke;
-	background-image: url("misc//banner.jpg");
+	font-family: 'Ewert', cursive;
+ 	font-size: 500%;
+	 background-image: url("misc//banner.jpg");
 	background-position: 20%;
-}
- header h1 {
-	 position: relative;		
-	 top: 40%;
-	 cursor: default;
+ }
+ #edan_bi p {
+	padding: 80px 0 0 0;
+	color: whitesmoke;
  }
  
- #playlist h3 {
+h3 {
 	 margin: 5px;
 	 text-align: center;
+	 text-decoration: underline;
  }
 
- footer {
-	 margin-bottom: 70px;
-	 height: 80px;
-	 text-align: center;
-}
+/*  #like_qr #like { float: left; }
+ */
+ .trend {
+	 display: inline-block;
+	 margin: 0 20px 0 30px;
+ } 
 
- #icons_contact {
-	list-style: none;
+#like_btn { 
+	border-width: 20px;
+	border-color: red;	
 }
-
+ 
+#icons_contact {
+	 list-style: none;
+	}
+	
 ul.icons_contact li {
 	display: inline;
 }
 
- #contact {
-	 background-color: cadetblue;
- }
+#contact {
+	background-color: cadetblue;
+}
 
- #contact h3 {
-	 margin: 5px;
- }
+#contact h3 {
+	margin: 5px;
+}
+
+ footer {
+	 clear: both;
+	 margin-bottom: 70px;
+	 height: 80px;
+	 text-align: center;
+}
 
