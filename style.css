@@ -1,12 +1,15 @@
 body {
 	margin: 0;
 	font-size: 100%;
+	background-color: rgb(235, 235, 235);
 }
 
 section, #contact {
-	margin-left: 20px;
-	margin-right: 20px;
-	border: thin solid blue;
+	/* margin-left: 50px;
+	margin-right: 50px; */
+	margin: 12px 50px;
+	padding: 0 0 20px 0;
+	background-color: white;
 }
 
 #about_me {
@@ -29,15 +32,14 @@ section, #contact {
 }
 
 #edan_bi {
-	/* margin-left: 50px;
-	margin-right: 50px; */
 	margin: 30px 0 25px 0;
 	height: 300px;
 	text-align: center;
 	font-family: 'Ewert', cursive;
- 	font-size: 500%;
-	 background-image: url("misc//banner.jpg");
-	background-position: 20%;
+	font-size: 500%;
+	background-image: url("misc//pawel-czerwinski-1311901-unsplash.jpg");
+	background-position: 60%;
+	background-size: 100%;
  }
  #edan_bi p {
 	padding: 80px 0 0 0;
@@ -50,8 +52,11 @@ h3 {
 	 text-decoration: underline;
  }
 
-/*  #like_qr #like { float: left; }
- */
+ #gallery { margin: 0 2% 0 2%; }
+
+ #playlist { margin: 0 3% 0 7%; }
+
+/*  #like_qr #like { float: left; } */
  .trend {
 	 display: inline-block;
 	 margin: 0 20px 0 30px;
@@ -70,10 +75,6 @@ ul.icons_contact li {
 	display: inline;
 }
 
-#contact {
-	background-color: cadetblue;
-}
-
 #contact h3 {
 	margin: 5px;
 }
@@ -81,6 +82,7 @@ ul.icons_contact li {
  footer {
 	 clear: both;
 	 margin-bottom: 70px;
+	 padding: 10px 0 0 0;
 	 height: 80px;
 	 text-align: center;
 }
