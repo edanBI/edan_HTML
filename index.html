@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html>
-  
+
 <!-- https://edanbi.github.io/edan_HTML -->
 
 <head>
   <title> Edan Ben Ivri </title>
   <link rel="stylesheet" type="text/css" href="style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Ewert" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ewert|Montserrat|Oswald:400,600" rel="stylesheet">
   <link rel="shortcut icon" href="misc/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="misc/favicon.ico" type="image/x-icon"> 
+  <link rel="icon" href="misc/favicon.ico" type="image/x-icon">
+  <link href="misc/themify-icons.css" rel="stylesheet">
 </head>
 
 <body>
   <div id="menu">
-    <a href="#about"> <b>About Me </b> </a> |
-    <a href="#photos"> <b> My Photos </b> </a> |
-    <a href="#playlist"> <b> My Playlist </b> </a> |
-    <a href="#like"> <b> Like </b> </a> |
-    <a href="#qrcoder"> <b> QR code </b> </a> |
-    <a href="#QnA"> <b> Q&A </b> </a> |
-    <a href="#contact"> <b> Contact Me </b> </a>
+    <a href="#_about_me"> <span class="ti-user"></span> &nbsp; <b> About Me </b> </a> |
+    <a href="#_gallery"> <span class="ti-gallery"></span> &nbsp; <b> My Photos </b> </a> |
+    <a href="#_playlist"> <span class="ti-headphone"></span> &nbsp; <b> My Playlist </b> </a> |
+    <a href="#_like"> <span class="ti-facebook"></span> &nbsp; <b> Like </b> </a> |
+    <a href="#_qr"> <span class="ti-target"></span> &nbsp; <b> QR code </b> </a> |
+    <a href="#_QnA"> <span class="ti-help-alt"></span> &nbsp; <b> Q&A </b> </a> |
+    <a href="#_contact"> <span class="ti-email"></span> &nbsp; <b> Contact Me </b> </a>
   </div>
 
   <div id="edan_bi">
-      <p>Edan Ben Ivri</p>
+    <p>Edan Ben Ivri</p>
   </div>
 
+  <a class="anchor" id="_about_me"></a>
   <section class="section">
     <h3> Who am I? </h3>
     <p id="about_me">
       <b>Hey there!</b> Edan Ben Ivri. I'm a 4th year Information Systems Engineering Student at Ben Gurion University.
       Originally i'm from Or Yehuda, Israel, born and bred. In the past 5 years i've been living in Be'er Sheva.
-      My hobbies include listening to music, collecting vinyl records, watching TV (as most people), snowboarding, cycling, playing video games 
-      and hangout with friends.
+      My hobbies include listening to music, collecting vinyl records, watching TV (as most people), snowboarding,
+      cycling, playing video games and hangout with friends.
       I'm have a strong interest in IT and technology, that is the main reason I chose this field of study.<br>
-      My expectations from this course are to get a good grip of web development tools and how to control them perfectly. At the end of the semester 
+      My expectations from this course are to get a good grip of web development tools and how to control them
+      perfectly. At the end of the semester
       I would like to be at the point where I can develope any web application I should desire to. <br>
-      In this assignment I had a bit of difficulty at the start to grasp the idea of how to program in HTML and CSS because I had no experience at 
+      In this assignment I had a bit of difficulty at the start to grasp the idea of how to program in HTML and CSS
+      because I had no experience at
       all with this languages. <br>
       Hope you'll like my sweet page :)
     </p>
@@ -44,47 +48,50 @@
 
   <br />
 
+  <a class="anchor" id="_gallery"></a>
   <section class="section">
     <h3> My Photos </h3> <br>
     <div id="gallery">
-      <img class="gallery" src="misc/pic1.jpg" width="450" height="320">
-      <img class="gallery" src="misc/pic2.jpg" width="450" height="320">
-      <img class="gallery" src="misc/pic3.jpg" width="450" height="320">
+      <img class="gallery" src="misc/pic1.jpg" >
+      <img class="gallery" src="misc/pic2.jpg" >
+      <img class="gallery" src="misc/pic3.jpg">
     </div>
   </section>
-
+<!--  width="450" height="320" -->
   <br />
 
+  <a class="anchor" id="_playlist"></a>
   <section class="section">
-    <h3> playlist </h3> <br>
+    <h3> My Playlist </h3> <br>
     <div id="playlist">
-      <iframe src="https://open.spotify.com/embed/track/1oTHteQbmJw15rPxPVXUTv" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-      <iframe src="https://open.spotify.com/embed/track/2LPUvD5DDOO4UYGkWgjI2C" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-      <iframe src="https://open.spotify.com/embed/track/2RZns0MGaKKLVxIZVMcJb4" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-      <iframe src="https://open.spotify.com/embed/track/6gOm4w7mbeIsouBWpRc9Qj" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/-_nlTXzey5g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/GQlA7oE6nd0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
     </div>
   </section>
 
   <br />
 
+  <a class="anchor" id="_like"></a>
+  <section class="section" id="like">
+    <h3>Like Me</h3> <br>
+    <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fedanbi.github.io%2Fedan_HTML&width=450&layout=standard&action=like&size=large&show_faces=true&share=true&height=80&appId"
+      width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
+      allow="encrypted-media"></iframe>
+  </section>
+
+  <a class="anchor" id="_qr"></a>
+  <section class="section" id="qr">
+    <h3>Scan My Code </h3> 
+    <img src="misc/QRcode.png">
+  </section>
+
+  <br />
+
+  <a class="anchor" id="_QnA"></a>
   <section class="section">
-    <!-- like button -->
-    <div id="like_btn" class="trend">
-      give me a like <br>
-      <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fedanbi.github.io%2Fedan_HTML%2F&width=132&layout=button_count&action=like&size=large&show_faces=false&share=true&height=46&appId" 
-      width="132" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-    </div>
-    <!-- QR code -->
-    <div id="qr_code" class="trend">
-        scan my code <br>
-        <img src="misc/QRcode.png">
-    </div>
-  </section>
-
-  <br />
-
-  <section id="QnA" class="section">
-    Q&A
+    <h3>Q&A</h3>
     <br />
     <br />
     <br />
@@ -92,17 +99,61 @@
 
   <br />
 
-  <footer id="contact">
-    <h3> Contact Me </h3>
-    <ul class="icons_contact">
+  <a class="anchor" id="_contact"></a>
+  <section class="section" id="contact">
+    <form action="mailto:benivre@post.bgu.ac.il" method="post" enctype="text/plain" autocomplete="on">
+      Your Name:<br>
+      <input type="text" placeholder="Enter Name" name="Name" required><br>
+      Message:<br>
+      <textarea name="Message" cols="50" rows="3" placeholder="Your Message..." required></textarea><br>
+      <input type="submit" value="Send" class="btn">
+      <input type="reset" value="Reset" class="btn">
+    </form>
+    
+    <img id="connect" src="misc//contact_me.png">
+    
+  </section>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<!-- <ul class="icons_contact">
       <li>Gmail | </li>
       <li>Facebook | </li>
       <li>Instagram | </li>
       <li>LinkedIn | </li>
       <li>Github</li>
-    </ul>
-  </footer>
-    
+    </ul> -->
   <script type="text/javascript">
     $(function () {
       $("#nav a").click(function (e) {
@@ -117,5 +168,5 @@
     });​
   </script>
 </body>
-</html>
 
+</html>
